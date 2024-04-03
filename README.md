@@ -1,3 +1,7 @@
+![page1](https://github.com/Shiva-Hiremath786/EmployeeManagement/assets/58485568/9b220d51-f6b5-428e-b19e-b0733c261f65)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
