@@ -1,0 +1,36 @@
+.main-content {
+    padding: 20px;
+    background-color: #ffff;
+  }
+  
+  .add-employee-form {
+    margin-bottom: 20px;
+  }
+  
+  .add-employee-form input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .employee-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .employee-table td button {
+    margin-right: 5px;
+  }
+  
+  

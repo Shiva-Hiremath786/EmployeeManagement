@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route
+
+import LoginPage from './components/LoginPage';
+import SignUpPage from './components/SignUpPage';
+import HomePage from './components/HomePage';
+
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    setUser(null);
+  };
+
+  const handleSignUp = (redirectTo) => {
+    // Navigate to the specified path after successful signup
+    window.location.href = redirectTo;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage setUser={setUser} />} />
+        <Route path="/signup" element={<SignUpPage onSignUp={handleSignUp} />} />
+        <Route path="/home" element={<HomePage user={user} onLogout={handleLogout} />} />
+      </Routes>
+    </Router>
   );
 }
 
