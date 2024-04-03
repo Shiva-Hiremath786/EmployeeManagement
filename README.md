@@ -1,4 +1,6 @@
 ![page1](https://github.com/Shiva-Hiremath786/EmployeeManagement/assets/58485568/9b220d51-f6b5-428e-b19e-b0733c261f65)
+![page2](https://github.com/Shiva-Hiremath786/EmployeeManagement/assets/58485568/2e43cd52-2376-4d4a-be3b-49f6b2461188)
+
 
 
 
